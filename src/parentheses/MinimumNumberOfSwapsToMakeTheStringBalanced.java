@@ -1,5 +1,6 @@
+package parentheses;
 
-public class ParenthesesMinimumNumberOfSwapsToMakeTheStringBalanced {
+public class MinimumNumberOfSwapsToMakeTheStringBalanced {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

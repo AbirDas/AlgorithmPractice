@@ -35,7 +35,7 @@ public class MergeInterval {
             if(startArray[i]>end){
                 answer.add(Arrays.asList(start,end));
                 
-                if(i==len) break;
+                if(i==len) break;//not required
                 start = startArray[i];
                 end = endArray[j];
             }else{
