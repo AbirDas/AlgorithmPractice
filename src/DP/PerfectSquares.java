@@ -1,3 +1,4 @@
+package DP;
 
 public class PerfectSquares {
 

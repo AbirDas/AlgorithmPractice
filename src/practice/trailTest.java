@@ -1,7 +1,7 @@
 package practice;
 
-import java.util.Arrays;
 import java.util.Comparator;
+import java.util.Stack;
 
 public class trailTest implements Comparator<String>{
 
@@ -24,8 +24,23 @@ public class trailTest implements Comparator<String>{
             startArray[i] = intervals[i][j];
             endArray[i] = intervals[i][j+1];
         }*/
+		/*Queue<Integer> qu = new PriorityQueue<>();
+		qu.offer(3);
+		qu.offer(1);
+		System.out.println(qu.poll());
+		System.out.println(qu.poll());
+		System.out.println(qu.poll());*/
 		
-		System.out.println(3%4);
+		/*Stack<Character> stack = new Stack<>();
+		System.out.println(stack.pop());*/
+		
+		System.out.println(Integer.bitCount(7));
+		System.out.println(Integer.toBinaryString(7));
+		
+		String s1 = "ABCABC";
+		String s2 = "ABCA";
+		
+		System.out.println(s1.substring(s2.length()));
 	}
 
 	@Override
