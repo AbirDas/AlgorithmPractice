@@ -1,4 +1,4 @@
-package binary;
+package TreeAndLinkedList;
 
 public class PopulatingNextRightPointersInEachNodeII {
 

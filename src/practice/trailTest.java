@@ -41,7 +41,11 @@ public class trailTest implements Comparator<String>{
 		String s2 = "ABCA";
 		
 		System.out.println(s1.substring(s2.length()));
+	
 	}
+	
+	
+	
 
 	@Override
 	public int compare(String o1, String o2) {
