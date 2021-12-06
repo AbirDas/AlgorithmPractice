@@ -8,7 +8,7 @@ public class ReverseNodesInKGroup {
 		rnkg.printLinkedList(rnkg.reverseKGroup(rnkg.formLinkedList(new int[] {31,22,11,44,5,1}), 2));
 	}
 	
-	//main logic
+	//main reverse logic
 	public ListNode reverse(ListNode head, int k) {
         ListNode curr = head;
         ListNode pre = null;
@@ -23,7 +23,7 @@ public class ReverseNodesInKGroup {
         return pre;
     }
     
-	//main logic
+	//main logic appending node after reverse
     public ListNode reverseKGroup(ListNode head, int k) {
         if(k==1 || head==null || head.next==null) return head;
         
