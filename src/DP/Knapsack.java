@@ -5,8 +5,8 @@ public class Knapsack {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Knapsack k = new Knapsack();
-		// System.out.println(k.findTargetSumWays(new int[]{1,1,1,1,1},3));
-		System.out.println(k.findTargetSumWays(new int[] { 0, 0, 0, 0, 0, 0, 0, 0, 1 }, 1));
+		 System.out.println(k.findTargetSumWays(new int[]{1,1,1,1,1},3));
+		//System.out.println(k.findTargetSumWays(new int[] { 0, 0, 0, 0, 0, 0, 0, 0, 1 }, 1));
 	}
 
 	public int findTargetSumWays(int[] nums, int target) {

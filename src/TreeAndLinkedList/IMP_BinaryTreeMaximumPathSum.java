@@ -1,6 +1,6 @@
 package TreeAndLinkedList;
 
-public class BinaryTreeMaximumPathSum {
+public class IMP_BinaryTreeMaximumPathSum {
 
 	//Main logic
 	int maxValue;
