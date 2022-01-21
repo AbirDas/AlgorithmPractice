@@ -5,8 +5,10 @@ import java.util.List;
 public class ReplaceWords {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		/*
+		Input:- dictionary = ["cat","bat","rat"], sentence = "the cattle was rattled by the battery"
+		Output:- "the cat was rat by the bat"
+		*/
 	}
 
 	class Solution {
