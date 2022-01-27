@@ -43,6 +43,7 @@ public class IMP_TextJustification {
 			int atleast = (reqSpace == 0) ? 0 : vac / reqSpace;
 			int extra = (reqSpace == 0) ? 0 : vac % reqSpace;
 
+			//for last line
 			if (j == len) {
 				atleast = 1;
 				extra = 0;
