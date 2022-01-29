@@ -1,6 +1,6 @@
 package Google.Medium;
 
-public class IMP_RandomPickWithWeight {
+public class VIMP_RandomPickWithWeight {
 
 	public static void main(String[] args) {
 		/*

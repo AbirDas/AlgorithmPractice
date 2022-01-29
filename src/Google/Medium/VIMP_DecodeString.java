@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;
 
-public class IMP_DecodeString {
+public class VIMP_DecodeString {
 
 	public static void main(String[] args) {
 		//System.out.println(decodeString("3[a]2[bc]"));
