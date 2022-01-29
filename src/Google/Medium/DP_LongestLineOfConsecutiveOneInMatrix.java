@@ -1,6 +1,6 @@
 package Google.Medium;
 
-public class LongestLineOfConsecutiveOneInMatrix {
+public class DP_LongestLineOfConsecutiveOneInMatrix {
 
 	public static void main(String[] args) {
 		/*
