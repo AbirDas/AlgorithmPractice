@@ -3,7 +3,7 @@ package DP;
 public class PerfectSquares {
 
 	public static void main(String[] args) {
-		System.out.println(numSquares(25));
+		System.out.println(numSquares(4));
 	}
 	
     public static int numSquares(int n) {
