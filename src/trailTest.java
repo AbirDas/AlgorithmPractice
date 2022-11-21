@@ -34,14 +34,17 @@ public class trailTest implements Comparator<String>{
 		/*Stack<Character> stack = new Stack<>();
 		System.out.println(stack.pop());*/
 		
-		System.out.println(Integer.bitCount(7));
+		/*System.out.println(Integer.bitCount(7));
 		System.out.println(Integer.toBinaryString(7));
 		
 		String s1 = "ABCABC";
 		String s2 = "ABCA";
 		
-		System.out.println(s1.substring(s2.length()));
-	
+		System.out.println(s1.substring(s2.length()));*/
+		
+		int bitmask=21;
+		System.out.println(bitmask & (-bitmask));
+		System.out.println(bitmask & ~(bitmask-1));
 	}
 	
 	
