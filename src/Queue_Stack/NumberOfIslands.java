@@ -18,14 +18,11 @@ public class NumberOfIslands {
         rowLen = grid.length;
         colLen = grid[0].length;
         int count = 0;
-        //System.out.println("rowLen = "+rowLen+",colLen = "+colLen);
-        Queue<int[]> queue = new LinkedList<int[]>();
-        Boolean[][] visited = new Boolean[rowLen][colLen];
         
-        for(int i=0; i<rowLen; i++) {
-            Arrays.fill(visited[i], false);
-        }
+        boolean[][] visited = new boolean[rowLen][colLen];
         
+        //Queue
+        /*Queue<int[]> queue = new LinkedList<int[]>();
         for(int i=0; i<rowLen; i++) {
             for(int j=0; j<colLen; j++) {
                 if(grid[i][j]=='1' && !visited[i][j]) {
@@ -35,11 +32,33 @@ public class NumberOfIslands {
                     traversiland(queue,grid,visited);
                 }
             }
+        }*/
+        
+        //Stack-recursion
+        for(int i=0; i<rowLen; i++) {
+            for(int j=0; j<colLen; j++) {
+                if(grid[i][j]=='1' && !visited[i][j]) {
+                    count++;
+                    traversIlandStack(grid,visited,i,j);
+                }
+            }
         }
+        
         return count;
     }
     
-    private void traversiland(Queue<int[]> queue,char[][] grid, Boolean[][] visited) {
+    private void traversIlandStack(char[][] grid, boolean[][]visited, int row, int col) {
+        if(row<0 || row>=rowLen || col<0 || col>=colLen || grid[row][col]!='1' || visited[row][col]) {
+            return;
+        }
+        visited[row][col] = true;
+        traversIlandStack(grid,visited,row+1,col);
+        traversIlandStack(grid,visited,row-1,col);
+        traversIlandStack(grid,visited,row,col+1);
+        traversIlandStack(grid,visited,row,col-1);
+    }
+    
+    private void traversilandQueue(Queue<int[]> queue,char[][] grid, boolean[][] visited) {
         int[][] directions = {{1,0},{-1,0},{0,-1},{0,1}};
         
         while(!queue.isEmpty()) {
@@ -47,14 +66,13 @@ public class NumberOfIslands {
             for(int[] direction : directions) {
                 int x = curr[0] + direction[0];
                 int y = curr[1] + direction[1];
-                //System.out.println("x = "+x+",y = "+y);
+                
                 if(x>=0 && x<rowLen && y>=0 && y<colLen && grid[x][y]=='1' && !visited[x][y]) {
                     visited[x][y] = true;
                     queue.offer(new int[]{x,y});
                 }
             }
         }
-        
     }
 
 }
