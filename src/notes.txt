@@ -1,0 +1,6 @@
+https://leetcode.com/problems/number-of-distinct-islands/solution/
+
+https://leetcode.com/problems/number-of-distinct-islands-ii/
+
+https://leetcode.com/problems/longest-mountain-in-array/#:~:text=Given%20an%20integer%20array%20arr,2%5D%20which%20has%20length%205.
+
