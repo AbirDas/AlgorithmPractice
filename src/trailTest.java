@@ -42,9 +42,13 @@ public class trailTest implements Comparator<String>{
 		
 		System.out.println(s1.substring(s2.length()));*/
 		
-		int bitmask=21;
+		/*int bitmask=21;
 		System.out.println(bitmask & (-bitmask));
-		System.out.println(bitmask & ~(bitmask-1));
+		System.out.println(bitmask & ~(bitmask-1));*/
+		
+		int i=2, j=8;
+		System.out.println((i+j)/2);
+		System.out.println(j+(i-j)/2);
 	}
 	
 	
