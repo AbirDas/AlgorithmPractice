@@ -8,11 +8,11 @@
 *.log
 
 # Package Files (Uncomment if you do not want to track your built artifacts)
-# *.jar
-# *.war
-# *.ear
-# *.zip
-# *.tar.gz
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
 
 # Virtual machine crash logs
 hs_err_pid*
