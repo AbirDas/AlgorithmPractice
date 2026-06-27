@@ -1,8 +1,6 @@
 package Sum;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 public class _3Sum {
 
@@ -15,7 +13,7 @@ public class _3Sum {
         return threeSum(nums,0);
     }
     
-    public List<List<Integer>> threeSum(int[] nums,int target) {
+    /*public List<List<Integer>> threeSum(int[] nums,int target) {
         Arrays.sort(nums);
         if(nums[0] > target) return new ArrayList<List<Integer>>();
         List<List<Integer>> answer = new ArrayList<List<Integer>>();
@@ -47,6 +45,43 @@ public class _3Sum {
                 }
             }
         }
+    }*/
+    
+    public List<List<Integer>> threeSum(int[] nums,int target) {
+        List<List<Integer>> answer = new LinkedList<List<Integer>>();
+        if(nums==null) return answer;
+        int len = nums.length;
+        Arrays.sort(nums);
+        
+        for(int i=0; i<len; i++) {
+            if(i==0 || nums[i-1]!=nums[i]) {
+                twoSum(nums,0,i,answer);
+            }
+        }
+        return answer;
     }
+    
+    private void twoSum(int[] nums, int target, int i, List<List<Integer>> answer) {
+        int lo=i+1, hi=nums.length-1;
+        
+        while(lo<hi) {
+            int sum = nums[i] + nums[lo] + nums[hi];
+            if(sum<target) {
+                lo++;
+            } else if(sum>target) {
+                hi--;
+            } else {
+                answer.add(Arrays.asList(nums[i], nums[lo], nums[hi]));
+                lo++;
+                while(lo<hi && nums[lo-1]==nums[lo]) {
+                    lo++;
+                }
+                hi--;
+                while(lo<hi && nums[hi+1]==nums[hi]) {
+                    hi--;
+                }
+            }
+        }
+    }   
 
 }
