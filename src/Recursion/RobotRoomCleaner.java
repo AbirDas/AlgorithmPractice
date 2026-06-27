@@ -2,7 +2,6 @@ package Recursion;
 
 import java.util.HashSet;
 import java.util.Set;
-import javafx.util.Pair;
 
 public class RobotRoomCleaner {
 
@@ -11,8 +10,9 @@ public class RobotRoomCleaner {
 
 	}
 
+	record Pair(Integer x, Integer y) {}
 	Robot robot;
-	Set<Pair<Integer, Integer>> visited = new HashSet();
+	Set<Pair> visited = new HashSet();
 	int[][] directions = { { -1, 0 }, { 0, 1 }, { 1, 0 }, { 0, -1 } };
 
 	private void moveBack() {
