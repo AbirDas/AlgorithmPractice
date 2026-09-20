@@ -7,12 +7,22 @@ import java.util.List;
 public class _4Sum {
 
 	public static void main(String[] args) {
-		System.out.println(new _4Sum().fourSum(new int[] {1,0,-1,0,-2,2}, 0));
+		//System.out.println(new _4Sum().fourSum(new int[] {1,0,-1,0,-2,2}, 0));
+		System.out.println(new _4Sum().fourSum(new int[] {1000000000,1000000000,1000000000,1000000000}, -294967296));
+		
 	}
 	
     public List<List<Integer>> fourSum(int[] nums, int target) {
         List<List<Integer>> answer = new ArrayList<List<Integer>>();
         if(nums==null || nums.length < 4) return answer;
+        int len = nums.length;
+        if(len==4) {
+            if((nums[0]+nums[1]+nums[2]+nums[3])==target) {
+            	System.out.println(nums[0]+nums[1]+nums[2]+nums[3]);
+                answer.add(Arrays.asList(nums[0],nums[1],nums[2],nums[3]));
+            }
+            return answer;
+        }
         Arrays.sort(nums);
         for(int i=0; i<nums.length ; i++){
             if(i==0 || nums[i-1]!=nums[i]){
