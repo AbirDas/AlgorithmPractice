@@ -26,3 +26,6 @@ replay_pid*
 .factorypath
 .idea
 /bin/
+
+#Intellij
+LeetCode.iml
