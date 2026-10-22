@@ -50,7 +50,7 @@ public class SudokuSolver {
     }
     
     public boolean validate(char[][] board, int i, int j, int val) {
-        for(int k=0; k<jLen; k++ ){
+        for(int k=0; k<jLen; k++ ) {
             if(board[i][k]==(char)(val+'0')) return false;
         }
         
@@ -60,8 +60,8 @@ public class SudokuSolver {
         
         int si = 3*(i/3);
         int sj = 3*(j/3);
-        for(int x=0; x<3; x++){
-            for(int y=0; y<3; y++){
+        for(int x=0; x<3; x++) {
+            for(int y=0; y<3; y++) {
                 if(board[si+x][sj+y]==(char)(val+'0')) return false;
             }
         }

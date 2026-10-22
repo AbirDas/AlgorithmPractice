@@ -33,7 +33,7 @@ public class MedianOfTwoSortedArrays {
                 }
             }
             if(xLeft > yRight){
-                right = xPart-1;
+                 right = xPart-1;
             }else{
                 left = xPart+1;
             }
